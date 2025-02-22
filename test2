@@ -1,1 +1,10 @@
-testing out 2nd test
+class mother:
+    def skills(self):
+        print("Cooking, cleaning, washing, ironing")
+
+class children(mother): 
+    def skills(self):
+        mother.skills(self)
+
+c = children()
+c.skills()
