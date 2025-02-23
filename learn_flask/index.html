@@ -1,0 +1,31 @@
+<!doctype HTML>
+<head>
+<!--    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>My Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<h1>This is my Root page.</h1>
+
+<body class= "main"> 
+    <div>
+        <p>
+            This is the form. Please enter name.
+        </p>
+
+        <form class="pure-form" method="POST" action="/">
+            Name: <br>
+            <input type="text" name="name" placeholder="Enter your name"><br>
+            <button type="submit" class="pure-button pure-button -primary">Submit</button>
+        </form>
+
+    </div>
+
+    <div>
+        {% if name %}
+            <h2>Hello, {{ name }}!</h2>
+        {% endif %}
+    </div>
+
+</body>
