@@ -59,3 +59,28 @@ def delete_todo(todo_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+"""
+Footnotes:
+1. Importing Libraries:
+   - We import Flask, request, and jsonify to set up the web application, handle incoming requests, and return JSON responses.
+2. Initializing the App:
+   - The Flask application is initialized with `app = Flask(__name__)`.
+3. In-memory Data:
+   - The `todos` list holds sample todo items, each represented as a dictionary with an `id`, `task`, and `done` status.
+4. ID Generation:
+   - The `get_next_id()` function calculates the next available ID by finding the maximum current ID and adding 1 (or starting at 1 if the list is empty).
+5. GET All Todos:
+   - The `/todos` route (GET) returns the full list of todos as JSON.
+6. GET Specific Todo:
+   - The `/todos/<int:todo_id>` route (GET) searches for a todo by its ID and returns it, or an error message with a 404 status if not found.
+7. Creating a Todo:
+   - The POST `/todos` route expects JSON data containing a "task". It validates the input, creates a new todo with a unique ID, appends it to the list, and returns the new todo with a 201 (Created) status.
+8. Updating a Todo:
+   - The PUT `/todos/<int:todo_id>` route updates an existing todo by replacing the "task" and "done" fields with new values from the request, while retaining the current values if not provided.
+9. Deleting a Todo:
+   - The DELETE `/todos/<int:todo_id>` route filters out the todo with the specified ID from the list and returns a confirmation message.
+10. Running the App:
+    - The `if __name__ == '__main__':` block starts the Flask development server in debug mode, which is useful during development for detailed error messages and auto-reloading.
+"""
