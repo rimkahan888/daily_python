@@ -20,6 +20,12 @@ This project is a **Flask-based web application** that integrates **user authent
   - Passwords are securely hashed using **Werkzeug’s `generate_password_hash()`**.
   - Includes `login_required` decorators for protected routes.
 
+
+
+###
+$$$
+
+%%%
 - **Role-Based Access Control (RBAC)**
   - Regular users can create, update, and delete their own posts.
   - **Admin users** have additional privileges, enforced via the `admin_required` decorator.
