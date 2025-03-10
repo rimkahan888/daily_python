@@ -15,7 +15,7 @@ def index():
         lowercase = 'lowercase' in request.form
         numbers = 'numbers' in request.form
         symbols = 'symbols' in request.form
-        
+            
         # Validate at least one option is selected
         if not any([uppercase, lowercase, numbers, symbols]):
             return render_template('index.html', error="Select at least one option")
