@@ -26,7 +26,7 @@ def index():
         if lowercase: characters.extend(string.ascii_lowercase)
         if numbers: characters.extend(string.digits)
         if symbols: characters.extend(string.punctuation)
-        
+           
         # Generate secure password
         while True:
             password = ''.join(secrets.choice(characters) for _ in range(length))
