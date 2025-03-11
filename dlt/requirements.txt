@@ -1,0 +1,15 @@
+dlt==1.8.0
+duckdb==1.2.1
+requests==2.32.3
+python-dotenv==1.0.1
+pandas==2.2.3
+numpy==2.2.3
+rich==13.9.4
+fsspec==2025.3.0
+tomlkit==0.13.2
+tenacity==9.0.0
+pathvalidate==3.2.3
+orjson==3.10.15
+giturlparse==0.12.0
+GitPython==3.1.44
+dlt-pendulum==3.0.2
