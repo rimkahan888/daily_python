@@ -1,13 +1,6 @@
 # DLT (Data Load Tool) Project
 
-This project demonstrates the usage of DLT (Data Load Tool) for efficient data ingestion and transformation. The project specifically showcases integration with the PokeAPI as an example use case.
-
-## Project Overview
-
-This project is part of the Data Engineering Zoomcamp 2025, focusing on data ingestion techniques using DLT. It demonstrates how to:
-- Extract data from REST APIs (specifically the PokeAPI)
-- Transform and normalize the data
-- Load it into a destination for further analysis
+A data pipeline project using DLT (Data Load Tool) to fetch and explore Pokemon data through a Streamlit interface.
 
 ## Prerequisites
 
@@ -31,6 +24,50 @@ venv\Scripts\activate  # On Windows
 ```bash
 pip install -r requirements.txt
 ```
+
+## Project Structure
+
+- `dlttest1.py`: Main DLT pipeline script for fetching Pokemon data
+- `streamlit_app.py`: Streamlit application for data visualization
+- `requirements.txt`: Project dependencies
+- `.gitignore`: Git ignore patterns
+- `venv/`: Virtual environment directory (not tracked in git)
+
+## Usage
+
+1. Run the DLT pipeline to fetch Pokemon data:
+```bash
+python dlttest1.py
+```
+
+2. Launch the Streamlit application:
+```bash
+streamlit run streamlit_app.py
+```
+
+3. Open your browser and navigate to the provided URL (typically http://localhost:8501)
+
+## Dependencies
+
+Key dependencies include:
+- dlt==1.8.0: Data Load Tool for pipeline creation
+- duckdb==1.2.1: Database engine
+- streamlit==1.32.2: Web application framework
+- plotly==5.20.0: Data visualization
+- pandas==2.2.3: Data manipulation
+- requests==2.32.3: HTTP requests
+
+Full list of dependencies can be found in `requirements.txt`.
+
+## Development
+
+The project uses:
+- Python 3.13.2
+- Virtual environment for dependency isolation
+- DuckDB for data storage
+- Streamlit for the web interface
+
+Make sure to update the .gitignore when adding new development tools or generating new artifacts.
 
 ## Project Structure
 
