@@ -126,5 +126,30 @@ The application handles various error scenarios:
 - **Rate Limiting**: Automatic handling of API rate limits
 - **Invalid Input**: User-friendly error messages for invalid selections
 
+## 🔒 Security Notes
 
-  
+- Never commit your actual Client ID and Client Secret to version control
+- Consider using environment variables for credentials:
+  ```python
+  import os
+  CLIENT_ID = os.getenv('SPOTIFY_CLIENT_ID')
+  CLIENT_SECRET = os.getenv('SPOTIFY_CLIENT_SECRET')
+  ```
+
+## 📝 Example Albums Included
+
+| Album | Artist | Spotify ID |
+|-------|--------|------------|
+| Abbey Road | The Beatles | `0ETFjACtuP2ADo6LFhL6HN` |
+| Thriller | Michael Jackson | `2ANVost0y2y52ema1E9xAZ` |
+| The Dark Side of the Moon | Pink Floyd | `4LH4d3cOWNNsVw41Gqt2kv` |
+
+## 🤝 Contributing
+
+Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+
