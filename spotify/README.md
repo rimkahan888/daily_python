@@ -79,5 +79,39 @@ python spotify_album_tracks.py
 🎯 Result: This album contains 17 tracks
 ```
 
+## 🔍 How to Find Album IDs
+
+1. **From Spotify Web Player:**
+   - Open an album in Spotify web player
+   - Copy the album ID from the URL: `https://open.spotify.com/album/[ALBUM_ID]`
+
+2. **From Spotify Desktop App:**
+   - Right-click on an album → Share → Copy Spotify URI
+   - Extract the ID from: `spotify:album:[ALBUM_ID]`
+
+## 📁 Project Structure
+
+```
+spotify_album_tracks.py
+├── SpotifyAlbumTracker class
+│   ├── __init__()           # Initialize with credentials
+│   ├── get_access_token()   # Authenticate with Spotify API
+│   └── get_album_tracks_count() # Fetch and analyze album data
+└── main()                   # Interactive command-line interface
+```
+
+## 🔐 Authentication
+
+This application uses Spotify's **Client Credentials** flow:
+- Suitable for server-to-server authentication
+- No user login required
+- Access to public album data only
+- Tokens are automatically managed
+
+## 🛠️ API Endpoints Used
+
+- **Token Endpoint**: `https://accounts.spotify.com/api/token`
+- **Albums Endpoint**: `https://api.spotify.com/v1/albums/{id}`
+
 
         
