@@ -165,4 +165,31 @@ class SpotifyAlbumTracker:
             else:
                 print("❌ Please enter a valid album ID")
                 
-       
+     elif choice == "2":
+            print("\n📀 Example Albums:")
+            for i, (name, album_id) in enumerate(example_albums.items(), 1):
+                print(f"{i}. {name}")
+            
+            try:
+                selection = int(input("\nSelect an album (1-3): ")) - 1
+                album_items = list(example_albums.items())
+                if 0 <= selection < len(album_items):
+                    name, album_id = album_items[selection]
+                    print(f"\n🔍 Analyzing: {name}")
+                    track_count = tracker.get_album_tracks_count(album_id)
+                    if track_count is not None:
+                        print(f"\n🎯 Result: This album contains {track_count} tracks")
+                else:
+                    print("❌ Invalid selection")
+            except ValueError:
+                print("❌ Please enter a valid number")
+                
+        elif choice == "3":
+            print("\n👋 Goodbye!")
+            break
+            
+        else:
+            print("❌ Invalid choice. Please enter 1, 2, or 3.")
+
+if __name__ == "__main__":
+    main()  
