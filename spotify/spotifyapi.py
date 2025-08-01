@@ -144,4 +144,25 @@ class SpotifyAlbumTracker:
         print("Failed to authenticate. Please check your credentials.")
         return
     
-    
+    # Interactive mode
+    while True:
+        print("\n" + "="*50)
+        print("🎵 Spotify Album Track Counter")
+        print("="*50)
+        print("\nOptions:")
+        print("1. Enter custom album ID")
+        print("2. Try example albums")
+        print("3. Exit")
+        
+        choice = input("\nEnter your choice (1-3): ").strip()
+        
+        if choice == "1":
+            album_id = input("\nEnter Spotify album ID: ").strip()
+            if album_id:
+                track_count = tracker.get_album_tracks_count(album_id)
+                if track_count is not None:
+                    print(f"\n🎯 Result: This album contains {track_count} tracks")
+            else:
+                print("❌ Please enter a valid album ID")
+                
+       
