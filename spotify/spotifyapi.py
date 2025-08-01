@@ -120,4 +120,28 @@ class SpotifyAlbumTracker:
             print(f"❌ JSON Decode Error: {e}")
             return None
 
-
+    def main():
+    """
+    Main function to demonstrate usage
+    """
+    # You need to get these from Spotify Developer Dashboard
+    # https://developer.spotify.com/dashboard/applications
+    CLIENT_ID = "placeholder1"
+    CLIENT_SECRET = "placeholder2"
+    
+    # Example album IDs (you can replace with any album ID)
+    example_albums = {
+        "Abbey Road - The Beatles": "0ETFjACtuP2ADo6LFhL6HN",
+        "Thriller - Michael Jackson": "2ANVost0y2y52ema1E9xAZ",
+        "The Dark Side of the Moon - Pink Floyd": "4LH4d3cOWNNsVw41Gqt2kv"
+    }
+    
+    # Initialize the tracker
+    tracker = SpotifyAlbumTracker(CLIENT_ID, CLIENT_SECRET)
+    
+    # Get access token
+    if not tracker.get_access_token():
+        print("Failed to authenticate. Please check your credentials.")
+        return
+    
+    
