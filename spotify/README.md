@@ -113,5 +113,24 @@ This application uses Spotify's **Client Credentials** flow:
 - **Token Endpoint**: `https://accounts.spotify.com/api/token`
 - **Albums Endpoint**: `https://api.spotify.com/v1/albums/{id}`
 
+## ⚠️ Error Handling
 
-        
+The application handles various error scenarios:
+
+- **Invalid Credentials**: Check your Client ID and Client Secret
+- **Album Not Found (404)**: Verify the album ID is correct
+- **Network Issues**: Check your internet connection
+- **Rate Limiting**: Automatic handling of API rate limits
+- **Invalid Input**: User-friendly error messages for invalid selections
+
+## 🔒 Security Notes
+
+- Never commit your actual Client ID and Client Secret to version control
+- Consider using environment variables for credentials:
+  ```python
+  import os
+  CLIENT_ID = os.getenv('SPOTIFY_CLIENT_ID')
+  CLIENT_SECRET = os.getenv('SPOTIFY_CLIENT_SECRET')
+  ```
+
+
