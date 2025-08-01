@@ -141,5 +141,21 @@ The application handles various error scenarios:
 | Thriller | Michael Jackson | `2ANVost0y2y52ema1E9xAZ` |
 | The Dark Side of the Moon | Pink Floyd | `4LH4d3cOWNNsVw41Gqt2kv` |
 
+## 🤝 Contributing
 
+Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Related Links
+
+- [Spotify Web API Documentation](https://developer.spotify.com/documentation/web-api/)
+- [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications)
+- [Python Requests Documentation](https://docs.python-requests.org/)
+
+---
+
+**Note**: This application requires valid Spotify API credentials to function. Make sure to replace the placeholder credentials with your actual Client ID and Client Secret from the Spotify Developer Dashboard.
         
