@@ -40,3 +40,44 @@ A Python application that uses the Spotify Web API to retrieve and analyze album
      CLIENT_SECRET = "your_actual_client_secret_here"
      ```
 
+## 🚀 Usage
+
+### Running the Application
+
+```bash
+python spotify_album_tracks.py
+```
+
+### Menu Options
+
+1. **Enter Custom Album ID**
+   - Input any Spotify album ID to analyze
+   - Album IDs can be found in Spotify URLs (e.g., `4LH4d3cOWNNsVw41Gqt2kv`)
+
+2. **Try Example Albums**
+   - Choose from pre-loaded popular albums:
+     - Abbey Road - The Beatles
+     - Thriller - Michael Jackson
+     - The Dark Side of the Moon - Pink Floyd
+
+3. **Exit**
+   - Close the application
+
+### Sample Output
+
+```
+📀 Album: Abbey Road
+🎵 Artist(s): The Beatles
+📊 Total tracks: 17
+
+📝 Track List:
+   1. Come Together (4:19)
+   2. Something (3:03)
+   3. Maxwell's Silver Hammer (3:27)
+   ...
+
+🎯 Result: This album contains 17 tracks
+```
+
+
+        
