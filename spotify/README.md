@@ -103,3 +103,28 @@ spotify_album_tracks.py
 └── main()                   # Interactive command-line interface
 ```
 
+## 🔐 Authentication
+
+This application uses Spotify's **Client Credentials** flow:
+- Suitable for server-to-server authentication
+- No user login required
+- Access to public album data only
+- Tokens are automatically managed
+
+## 🛠️ API Endpoints Used
+
+- **Token Endpoint**: `https://accounts.spotify.com/api/token`
+- **Albums Endpoint**: `https://api.spotify.com/v1/albums/{id}`
+
+## ⚠️ Error Handling
+
+The application handles various error scenarios:
+
+- **Invalid Credentials**: Check your Client ID and Client Secret
+- **Album Not Found (404)**: Verify the album ID is correct
+- **Network Issues**: Check your internet connection
+- **Rate Limiting**: Automatic handling of API rate limits
+- **Invalid Input**: User-friendly error messages for invalid selections
+
+
+  
