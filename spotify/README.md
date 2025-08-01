@@ -133,4 +133,13 @@ The application handles various error scenarios:
   CLIENT_SECRET = os.getenv('SPOTIFY_CLIENT_SECRET')
   ```
 
+## 📝 Example Albums Included
 
+| Album | Artist | Spotify ID |
+|-------|--------|------------|
+| Abbey Road | The Beatles | `0ETFjACtuP2ADo6LFhL6HN` |
+| Thriller | Michael Jackson | `2ANVost0y2y52ema1E9xAZ` |
+| The Dark Side of the Moon | Pink Floyd | `4LH4d3cOWNNsVw41Gqt2kv` |
+
+
+        
