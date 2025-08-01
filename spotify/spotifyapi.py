@@ -193,3 +193,12 @@ class SpotifyAlbumTracker:
 
 if __name__ == "__main__":
     main()  
+
+
+
+
+# Spotify Developer credentials - replace with your actual credentials
+    # Get these from: https://developer.spotify.com/dashboard/applications
+
+
+
